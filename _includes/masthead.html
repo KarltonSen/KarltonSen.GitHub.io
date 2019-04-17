@@ -7,19 +7,19 @@
 <img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
 <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-   About me : 
-  My name is Joshua Karlton-Senaye
-  I am a UnderGraduate Computer Science Student at the University of North Carolina.
-  I am seeking an Internship in Software Engineering
-  Future Career is to be a world leader in New Technology.
-  
-  
-  Contact:
-  Email: JoshuaKarlton@gmail.com 
-			or
-				jekarlto@uncg.edu
-  Phone: (704)-305-7717
+{{User Bio}}
 </p>
+
+<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
+<p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+{{Contact Me:
+	Phone: (704)-305-7717
+	Email: JoshuaKarlton@gmail.com
+	
+	}}
+</p>
+
+
 
 {% if include.metadata %}
   <div class="f4 mb-6">

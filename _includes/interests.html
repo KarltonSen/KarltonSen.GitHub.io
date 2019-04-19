@@ -4,11 +4,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Add font awesome icons -->
-<a herf="https://www.facebook.com" class="fa fa-facebook"></a>
+<div class="fa">
+  <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+
 <a href="#" class="fa fa-twitter"></a>
 <a href="#" class="fa fa-google"></a>
 <a href="#" class="fa fa-linkedin"></a>
 <a href="#" class="fa fa-instagram"></a>
+
+     </div>
 
 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Interests</h2>
 <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Topics that I want to learn more about.</p>

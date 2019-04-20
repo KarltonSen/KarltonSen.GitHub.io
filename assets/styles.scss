@@ -7,6 +7,18 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 /* Style all font awesome icons */
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
 .fa {
   padding: 20px;
   font-size: 30px;

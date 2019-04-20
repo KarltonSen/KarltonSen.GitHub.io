@@ -1,21 +1,18 @@
+--- 
+defaults: 
+  - 
+    scope: 
+      path: ""
+      type: posts
+    values: 
+      layout: post
 layout: sidebar
-style: light
-
-plugins:
+permalink: "/:year/:month/:day/:title/"
+plugins: 
   - jekyll-octicons
   - jekyll-github-metadata
-
-permalink: /:year/:month/:day/:title/
-
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"
-
-topics:
+style: light
+topics: 
   - 
     image_url: "https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png"
     name: CSS
@@ -28,20 +25,15 @@ topics:
     image_url: "https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png"
     name: Sass
     web_url: "https://github.com/topics/sass"
-  -
-    image_url: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bitcoin/bitcoin.png"
-    name: Bitcoin
-    web_url: "https://github.com/topics/bitcoin"
   - 
     image_url: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/android/android.png"
     name: Android
     web_url: "https://github.com/topics/android"
-  -
+  - 
     image_url: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/arduino/arduino.png"
     name: Arduino
     web_url: "https://github.com/topics/arduino"
-  -
-     image_url: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/csharp/csharp.png"
-    name: C#
+  - 
+    image_url: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/csharp/csharp.png"
+    name: "C#"
     web_url: "https://github.com/topics/csharp"
-    

@@ -18,8 +18,38 @@
   <br/>
    Phone: (704)-305-7717
 </p>   
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% if include.metadata %}
+  <div class="f4 mb-6">
+    {% if user.name %}
+      <div class="{{ metadata_styles }}">
+        {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
+        <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          @{{ user.login }}
+        </a>
+      </div>
+    {% endif %}
+    {% if user.email %}
+      <div class="{{ metadata_styles }}">
+        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
+        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          {{ user.email }}
+        </a>
+      </div>
+    {% endif %}
+    {% if user.location %}
+      <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
+        {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
+        {{ user.location }}
+      </div>
+    {% endif %}
+    {% if user.hireable %}
+      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
+    {% endif %}
+  </div>
+{% endif %}
+
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -55,37 +85,6 @@
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
           </div>
           <br>
-          </div>
-      </div><br>
 
 
 
-{% if include.metadata %}
-  <div class="f4 mb-6">
-    {% if user.name %}
-      <div class="{{ metadata_styles }}">
-        {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
-        <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          @{{ user.login }}
-        </a>
-      </div>
-    {% endif %}
-    {% if user.email %}
-      <div class="{{ metadata_styles }}">
-        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          {{ user.email }}
-        </a>
-      </div>
-    {% endif %}
-    {% if user.location %}
-      <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
-        {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
-        {{ user.location }}
-      </div>
-    {% endif %}
-    {% if user.hireable %}
-      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
-    {% endif %}
-  </div>
-{% endif %}

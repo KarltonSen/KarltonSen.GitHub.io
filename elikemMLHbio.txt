@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<h1 style="text-align:center;">Elikem's Coding Exercise
+</h1>
+
+
+<style>
+
+img {
+  display: block;
+   margin-left: auto;
+   margin-Right: auto;
+  margin-top: auto;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="file:///C:/Users/balli/ElikemMLHHomepage.html" href="#home">Elikem R .Des-Amekudi</a>
+  <a href="file:///C:/Users/balli/elikemMLHbio.html">Bio</a>
+  <a href="file:///C:/Users/balli/ElikemMLHhobbies.html">Hobbies</a>
+  <a href="file:///C:/Users/balli/elikemMLHso.html">Social media</a>
+</div>
+
+
+<h2 style="text-align:center;">Elikem's Bio
+</h2>
+
+
+<img src="https://www.shawbears.com/sports/msoc/2020-21/photos/0002/B76B1147-7912-4F38-9615-40D4F53EA709.jpeg?max_width=400" alt="Elikem" style="width:400px;height:400px;">
+
+
+<p/>Hi My name is Elikem I'm in my second year year as a Computer Infomations Systems student at Shaw.I was born in Brox N.Y i lived there for about 3 years then later i noved to Ghana in Africa where i am from i lived there for about two years than came back to the United states but this Time to Greensboro N.C thats where i ended up staying up until now.  <p>
+
+</body>
+</html>
+
